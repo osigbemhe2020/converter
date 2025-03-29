@@ -1,0 +1,266 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="converter.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1> Unit Converter</h>
+        </header>
+        <div class = "row">
+            <div class="Temperature">
+                <h2> Temperature Converter</h2>
+                <div class="subTemp">
+                    <div class="superSubTemp">
+                        <p>Celsius</p>
+                        <input type="number" id="celsiusA" name="celsiusA" oninput="celsiusToFahr()">
+                    </div>
+                    <div class="superSubTemp">
+                    <p> Fahrenheit</p>
+                    <input type="number" id="fahrenheitA" name="fahrenheitA" oninput="fahrToCelsius()">
+                    </div>
+                </div>
+                <div class="subTemp">
+                    <div class="superSubTemp">
+                    <p>Celsius</p>
+                    <input type="number" id="celsiusB" name="celsiusB" oninput="celsiusToKelvin()">
+                    </div>
+                    <div class="superSubTemp">
+                    <p> Kelvin</p>
+                    <input type="number" id="kelvinA" name="kelvinA" oninput="kelvinToCelsius()">
+                    </div>
+                </div>
+                <div class="subTemp">
+                    <div class="superSubTemp">
+                    <p>Fahrenheit</p>
+                    <input type="number" id="fahrenheitB" name="fahrenheitB" oninput="fahrToKelvin()">
+                    </div>
+                    <div class="superSubTemp">
+                    <p> Kelvin</p>
+                    <input type="number" id="kelvinB" name="kelvinB" oninput="kelvinTofahr()">
+                    </div>
+                </div>
+            </div>
+            <div class ="Temperature">
+                <h2> Mass Converter</h2>
+                <div class="subTemp">
+                    <div class="superSubTemp">
+                        <p>Kilograms</p>
+                        <input type="number" id="kiloA" name="kiloA" oninput="kiloTopound()">
+                    </div>
+                    <div class="superSubTemp">
+                    <p> Pounds</p>
+                <input type="number" id="poundA" name="poundA" oninput="poundTokilo()">
+                </div>
+                </div>
+                <div class="subTemp">
+                    <div class="superSubTemp">
+                    <p>Kilograms</p>
+                    <input type="number" id="kiloB" name="kiloB" oninput="kiloTogram()">
+                    </div>
+                    <div class="superSubTemp">
+                    <p>Grams</p>
+                    <input type="number" id="gramA" name="gramA" oninput="gramTokilo()">
+                    </div>
+                </div>
+                <div class="subTemp">
+                    <div class="superSubTemp">
+                    <p>Grams</p>
+                    <input type="number" id="gramB" name="gramB" oninput="gramTopound()">
+                    </div>
+                    <div class="superSubTemp">
+                    <p>Pounds</p>
+                    <input type="number" id="poundB" name="poundB" oninput="poundTogram()">
+                    </div>
+                </div>
+            </div>
+            <div class="Temperature">
+                <h2> Distance Converter</h2>
+                <div class="subTemp">
+                    <div class="superSubTemp">
+                        <p>Meters</p>
+                        <input type="number" id="metersA" name="metersA" oninput="meterToFeet()">
+                        </div>
+                    <div class="superSubTemp">
+                    <p>Feet</p>
+                    <input type="number" id="feetsA" name="feetsA" oninput="feetTometer()">
+                    </div>
+                </div>
+                <div class="subTemp">
+                    <div class="superSubTemp">
+                    <p>Meters</p>
+                    <input type="number" id="metersB" name="metersB" oninput="meterToinches()">
+                    </div>
+                    <div class="superSubTemp">
+                    <p>Inches</p>
+                    <input type="number" id="inchesA" name="inchesA" oninput="inchesTometer()">
+                    </div>
+                </div>
+                <div class="subTemp">
+                    <div class="superSubTemp">
+                        <p>Inches</p>
+                        <input type="number" id="inchesB" name="inchesB" oninput="inchesTofeet()">
+                    </div>
+                    <div class="superSubTemp">
+                        <p>Feet</p>
+                        <input type="number" id="feetsB" name="feetsB" oninput="feetToinches()">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="Temperature">
+                <h2> Distance 2 Converter</h2>
+                <div class="subTemp">
+                    <div class="superSubTemp">
+                        <p>KiloMeters</p>
+                        <input type="number" id="kilometersA" name="kilometersA" oninput="kiloTomile()">
+                    </div>
+                    <div class="superSubTemp">
+                        <p>Miles</p>
+                        <input type="number" id="milesA" name="milesA" oninput="mileTokilo()">
+                    </div>
+                </div>
+                <div class="subTemp">
+                    <div class="superSubTemp">
+                        <p>Meters</p>
+                        <input type="number" id="kilometersB" name="kilometersB" oninput="kiloTometer()">
+                    </div>
+                    <div class="superSubTemp">
+                        <p>KiloMeters</p>
+                        <input type="number" id="metersC" name="metersC" oninput="metersTokilo()">
+                    </div>
+                </div>
+                <div class="subTemp">
+                    <div class="superSubTemp">
+                        <p>Meters</p>
+                        <input type="number" id="metersD" name="metersD" oninput="meterTomile()">
+                    </div>
+                    <div class="superSubTemp">
+                        <p>Miles</p>
+                        <input type="number" id="milesB" name="milesB" oninput="mileTometer()">
+                    </div>
+                </div>
+            </div>
+            <div class="Temperature">
+                <h2> Speed converter</h2>
+                <div class="subTemp">
+                    <div class="superSubTemp">
+                        <p>KiloMeters/hr</p>
+                        <input type="number" id="km-hrA" name="km-hrA" oninput="kmhrTomihr()">
+                    </div>
+                    <div class="superSubTemp">
+                    <p>Miles/hr</p>
+                    <input type="number" id="mi-hrA" name="mi-hrA" oninput="mihrTokmhr()">
+                    </div>
+                </div>
+                <div class="subTemp">
+                    <div class="superSubTemp">
+                    <p>kiloMeters/hr</p>
+                    <input type="number" id="km-hrB" name="km-hrB" oninput="kmhrTomsec()">
+                    </div>
+                    <div class="superSubTemp">
+                    <p>Meters/sec</p>
+                    <input type="number" id="m-secA" name="m-secA" oninput="msecTokmhr()">
+                    </div>
+                </div>
+                <div class="subTemp">
+                    <div class="superSubTemp">
+                    <p>Meters/sec</p>
+                    <input type="number" id="m-secB" name="m-secB" oninput="msecTomihr()">
+                    </div>
+                    <div class="superSubTemp">
+                    <p>Miles/hr</p>
+                    <input type="number" id="mi-hrB" name="mi-hrB" oninput="mihrTomsec()">
+                    </div>
+                </div>
+            </div>
+            <div class="Temperature">
+                <h2> Land Area Converter</h2>
+                <div class="subTemp">
+                    <div class="superSubTemp">
+                        <p>Hectare</p>
+                        <input type="number" id="hectareA" name="hectareA" oninput="hectareTometer2()">
+                    </div>
+                    <div class="superSubTemp">
+                    <p>Meter<sup>2</sup></p>
+                    <input type="number" id="meter2A" name="meter2A" oninput="meter2Tohectare()">
+                    </div>
+                </div>
+                <div class="subTemp">
+                    <div class="superSubTemp">
+                    <p>Hectare</p>
+                    <input type="number" id="hectareB" name="hectareB" oninput="hectareToacre()">
+                    </div>
+                    <div class="superSubTemp">
+                    <p>Acre</p>
+                    <input type="number" id="acreA" name="acreA" oninput="acreTohectare()">
+                    </div>
+                </div>
+                <div class="subTemp">
+                    <div class="superSubTemp">
+                    <p>Acre</p>
+                    <input type="number" id="acreB" name="acreB" oninput="acreTometer2()">
+                    </div>
+                    <div class="superSubTemp">
+                    <p>Meter<sup>2</sup> </p>
+                    <input type="number" id="meter2B" name="meter2B" oninput="meter2Toarce()">
+                    </div>
+                </div>
+                <div class="subTemp">
+                    <div class="superSubTemp">
+                    <p>Acre</p>
+                    <input type="number" id="acreC" name="acreC" oninput="acreTofoot2()">
+                    </div>
+                    <div class="superSubTemp">
+                    <p>Foot<sup>2</sup> </p>
+                    <input type="number" id="foot2" name="foot2" oninput="foot2Toarce()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Ccontanier">
+        <div class="Cheader">
+           <h1> Currency Converter</h1>
+        </div>
+        <div class="main-body">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" value="100" />
+            <div class="dropdowns">
+                <select id="from-currency-select">
+                    <option>US Dollars</option>
+                    <option>British Pound</option>
+                    <option>Euros</option>
+                    <option>Naira</option>
+                    <option>Yuan</option>
+                    <option>Yen</option>
+                    <option>West Africa CFA</option>
+                    <option>Cedi</option>
+                    <option>Rand</option>
+                </select>
+                <select id="to-currency-select">
+                    <option>US Dollars</option>
+                    <option>British Pound</option>
+                    <option>Euros</option>
+                    <option>Naira</option>
+                    <option>Yuan</option>
+                    <option>Yen</option>
+                    <option>West Africa CFA</option>
+                    <option>Cedi</option>
+                    <option>Rand</option>
+                </select>
+              </div>
+              <button id="convert-button">Convert</button>
+              <p id="result"></p>
+        </div>
+    </div>
+    </div>
+    <script src="converter.js"></script>
+    <script src="exchanchage.js"></script>
+</body>
+</html>
