@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="converter.css" rel="stylesheet">
+    <style>
+        body{
+          display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        }
+    </style>
+</head>
+<body>
+<div id="Ccontanier">
+        <div class="Cheader">
+           <h1>Currency Converter</h1>
+        </div>
+        <div class="main-body">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" value="100" />
+            <div class="dropdowns">
+                <div>
+                <label for="from-currency-select"> Select Currency (From):</label>
+                <select id="from-currency-select">
+                    <option>US Dollars</option>
+                    <option>British Pound</option>
+                    <option>Euros</option>
+                    <option>Naira</option>
+                    <option>Yuan</option>
+                    <option>Yen</option>
+                    <option>West Africa CFA</option>
+                    <option>Cedi</option>
+                    <option>Rand</option>
+                </select>
+                </div>
+                <div>
+                <label for="to-currency-select"> Select Currency (To:)</label>
+                <select id="to-currency-select">
+                    <option>US Dollars</option>
+                    <option>British Pound</option>
+                    <option>Euros</option>
+                    <option selected>Naira</option>
+                    <option>Yuan</option>
+                    <option>Yen</option>
+                    <option>West Africa CFA</option>
+                    <option>Cedi</option>
+                    <option>Rand</option>
+                </select>
+                </div>
+              </div>
+              <button id="convert-button">Convert</button>
+              <p id="result"></p>
+        </div>
+    </div>
+    <script src="exchanchage.js"></script>
+</body>
+</html>
