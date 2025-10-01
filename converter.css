@@ -1,5 +1,7 @@
 body{
     background-color: rgb(51, 90, 218);
+    margin: 0;
+    padding: 0;
 }
 
 header{
@@ -64,8 +66,7 @@ input[type=number]:focus {
   #Ccontanier{
     width: 30%;
     background-color: #ffffff;
-    position: absolute;
-    left: 10%;
+    margin: auto;
     padding: 2em;
     border-radius: 0.8em;
      }
@@ -134,6 +135,53 @@ input[type=number]:focus {
     background-color: #e5dbff;
     padding: 0.8em 0;
   }
+ 
+        .container{
+            width: 60%;
+            margin: 2em auto;
+            padding: 1em 2em;
+            border-radius: 1em;
+            background-color: white;
+        }
+        .container h1{
+            text-align: center;
+            margin-bottom: 0.5em;
+            font-size: 2.5em;
+        }
+        .container p{
+            font-size: 1.2em;
+            line-height: 1.2em;
+        }
+        .container ul{
+            margin-top: 1em;
+            font-size: 1.1em;
+            line-height: 1.2em;
+        }
+        .container ul li{
+            margin-bottom: 0.5em;
+            list-style-type: square;
+        }
+        .container ul li::marker {
+       color: blue; /* bullet color */}
+        .content{
+            margin: 0.5em auto;
+            margin-top: 1.5em;
+            width: 80%;
+        }
+        .content button{
+            width: 100%;
+            margin: 0.6em auto;
+            padding: 1em;
+            border-radius: 0.5em;
+            border: none;
+            background-color: rgb(51, 90, 218);
+            color: white;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .content button:hover{
+            background-color: rgb(30, 60, 140);
+        }
   @media only screen and (max-width: 500px) {
     .row{
       display: grid;
@@ -151,9 +199,23 @@ input[type=number]:focus {
 
 #Ccontanier{
   width: 70%;
-  position: absolute;
-  left: 5%;
   padding: 2em;
   border-radius: 0.8em;
    }
+   .container{
+            width: 80%;
+            padding: 1em ;
+        }
+  .container h1{
+            
+            font-size: 2em;
+        }
+        .container p{
+            font-size: 1em;
+            line-height: 1em;
+        }
+        .container ul{
+            font-size: 0.9em;
+            line-height: 1em;
+        }
   }
